@@ -1,0 +1,5 @@
+# Tested on Windows with Python 3.11; other environments use requirements ranges.
+numpy==1.25.2; python_version == "3.11" and sys_platform == "win32"
+pynmeagps==1.1.7; python_version == "3.11" and sys_platform == "win32"
+pyrtcm==1.2.0; python_version == "3.11" and sys_platform == "win32"
+pyubx2==1.3.6; python_version == "3.11" and sys_platform == "win32"

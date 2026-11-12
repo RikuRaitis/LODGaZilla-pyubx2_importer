@@ -1,0 +1,55 @@
+{
+  "navigator": {
+    "series_metadata": [
+      { "id": "sample_count", "title": "Sample count", "source": "sample_count", "format": "integer" },
+      { "id": "sample_rate", "title": "Sample rate", "source": "sample_rate", "format": "rate" },
+      { "id": "min", "title": "Min", "source": "min", "format": "number" },
+      { "id": "max", "title": "Max", "source": "max", "format": "number" },
+      { "id": "unit", "title": "Unit", "source": "unit", "format": "text" },
+      { "id": "warning", "title": "Warning", "source": "warning", "format": "text" }
+    ]
+  },
+  "sections": [
+    {
+      "name": "GNSS",
+      "series": [
+        { "name": "latitude_deg", "group": "GNSS", "unit": "deg", "visibility": "visible" },
+        { "name": "longitude_deg", "group": "GNSS", "unit": "deg", "visibility": "visible" },
+        { "name": "altitude_m", "group": "GNSS", "unit": "m", "visibility": "visible" },
+        { "name": "distance_3d_m", "group": "GNSS", "unit": "m", "visibility": "visible" },
+        { "name": "distance_2d_m", "group": "GNSS", "unit": "m", "visibility": "visible" },
+        { "name": "ehpe_m", "group": "GNSS", "unit": "m", "visibility": "hidden" },
+        { "name": "geoid_separation_m", "group": "GNSS", "unit": "m", "visibility": "visible" },
+        { "name": "speed_mps", "group": "GNSS", "unit": "m/s", "visibility": "visible" },
+        { "name": "course_deg", "group": "GNSS", "unit": "deg", "visibility": "visible" },
+        { "name": "satellites_used", "group": "GNSS", "unit": "count", "visibility": "visible" },
+        {
+          "name": "fix_quality", "group": "GNSS", "unit": "index", "visibility": "visible",
+          "state_labels": {
+            "0": "No fix",
+            "1": "GNSS fix",
+            "2": "Diff GNSS fix",
+            "3": "PPS fix",
+            "4": "RTK fixed",
+            "5": "RTK float",
+            "6": "Dead reckoning"
+          }
+        },
+        {
+          "name": "fix_type", "group": "GNSS", "unit": "index", "visibility": "visible",
+          "state_labels": {
+            "0": "No fix",
+            "1": "Dead reckoning",
+            "2": "2D fix",
+            "3": "3D fix",
+            "4": "GNSS + dead reckoning",
+            "5": "Time only"
+          }
+        },
+        { "name": "pdop", "group": "GNSS", "unit": "", "visibility": "hidden" },
+        { "name": "hdop", "group": "GNSS", "unit": "", "visibility": "hidden" },
+        { "name": "vdop", "group": "GNSS", "unit": "", "visibility": "hidden" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "pyubx2_importer",
+  "title": "UBX GNSS importer",
+  "capabilities": [
+    "importer"
+  ],
+  "entry_point": "importer.py",
+  "api_version": 1,
+  "version": "0.1.0"
+}
